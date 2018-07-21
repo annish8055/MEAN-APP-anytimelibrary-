@@ -1,0 +1,23 @@
+{
+  "name": "angularproject-v03",
+  "version": "1.0.0",
+  "description": "Angular project for 201 course",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "jsonwebtoken": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-jwt": "*",
+    "rxjs": "^6.2.2"
+  },
+  "author": "Annish Kumar",
+  "license": "ISC"
+}
