@@ -1,0 +1,24 @@
+<app-admin-header></app-admin-header>
+<div class="container">
+    <h2>Book-List</h2>            
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>ISBN</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Genre</th>
+        </tr>
+      </thead>
+
+      <tbody *ngFor="let book of booksList">
+        <tr>
+          <td>{{book.isbn}}</td>
+          <td>{{book.title}}</td>
+          <td>{{book.author}}</td>
+          <td>{{book.genre}}</td>
+          <button class="btn btn-danger" (click)="onDelClick(book)">Delete</button>
+        </tr>
+       </tbody>
+    </table>
+  </div>

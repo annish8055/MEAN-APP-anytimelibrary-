@@ -1,0 +1,31 @@
+<app-admin-header></app-admin-header>
+<br>
+<div class="col-lg-4">
+<div class="card" style="width: 20rem;">
+    <img class="card-img-top" src="../../assets/userlist.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><b>User-List</b></h5>
+      <p class="card-text">Select to see user List</p>
+      <a class="btn btn-primary btn-lg" [routerLink]="['/admin','userList']">Go to User-List</a>
+    </div>
+  </div></div>
+ 
+    <div class="col-lg-4">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="../../assets/book_blue_delete.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><b>Delete Book</b></h5>
+          <p class="card-text">Select to delete old book</p>
+          <a href="#" class="btn btn-primary btn-lg" [routerLink]="['/admin','deletebook']">Go to delete book</a>
+        </div>
+      </div></div>
+
+      <div class="col-lg-4">
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="../../assets/book_blue_add.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title"><b>Add Book</b></h5>
+                <p class="card-text">Select to add new book</p>
+                <a href="#" class="btn btn-primary btn-lg" [routerLink]="['/admin','addBook']">Go to add book</a>
+              </div>
+            </div></div>

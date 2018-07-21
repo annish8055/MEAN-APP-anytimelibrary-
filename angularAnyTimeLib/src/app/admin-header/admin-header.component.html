@@ -1,0 +1,24 @@
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" (click)="toggleCollapse()">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+         <a class="navbar-brand" ><img src="../../assets/icon.png" alt="Icon" width="60" height="30"></a>
+         <a class="navbar-brand" [routerLink]="['/admin']">Any Time Library(ADMIN VIEW) </a>
+         <a class="navbar-brand" [routerLink]="['/admin']"> </a>
+         <a class="navbar-brand btn btn-warning" [routerLink]="['/admin']"> HOME </a>
+        </div>
+      <div class="collapse navbar-collapse" id="myNavbar" [class.collapse]="collapse">
+        
+        <ul class="nav navbar-nav navbar-right">
+           <li class="nav-item"> <a (click)="onLogout()">
+            <span class="glyphicon glyphicon-log-out"></span> Log out
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>

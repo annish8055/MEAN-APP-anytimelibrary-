@@ -1,0 +1,12 @@
+
+<app-header></app-header>
+<div *ngIf="user">
+  <h1 style="color:rgb(200, 255, 0); text-align: center"><b><i>WELCOME</i></b></h1>
+<div style="color:rgb(47, 50, 255); text-align: center">
+<h2 class="page-header"><b>NAME: </b>{{ user.name }}</h2>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item"><b>EMAIL: </b>{{ user.email }}</li>
+  <li class="list-group-item"><b>ROLE: </b>{{ user.role }}</li>
+</ul>
+</div>
+</div>

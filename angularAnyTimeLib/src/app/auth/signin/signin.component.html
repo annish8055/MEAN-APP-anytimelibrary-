@@ -1,0 +1,20 @@
+<div class="login-form">
+  <form (ngSubmit)="onSignin(f)" #f="ngForm">
+  <div class="avatar">
+    <img src="../../../assets/login.png" alt="Avatar">
+  </div>
+      <h2 class="text-center">Member Login</h2>   
+      <div class="form-group">
+        <input type="email" class="form-control" id="email" [(ngModel)]="email" name="email" placeholder="Email" required="required">
+      </div>
+  <div class="form-group">
+          <input type="password" class="form-control" id="password" [(ngModel)]="password" name="password" placeholder="Password" required="required">
+      </div>        
+      <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+      </div>
+  <div class="clearfix">
+             <a [routerLink]="['/signup']" class="pull-right">Register(new user)</a>
+      </div>
+  </form>
+</div>
